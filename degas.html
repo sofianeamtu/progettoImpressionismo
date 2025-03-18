@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edgar Degas</title>
+    <link rel="stylesheet" href="stile_artisti.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="script2.js"></script>
+
+    <meta name="DC.title" content="Edgar Degas - Impressionismo Digitale">
+    <meta name="DC.creator" content="Sofia Neamtu">
+    <meta name="DC.subject" content="Arte, Impressionismo, Edgar Degas, Pittura">
+    <meta name="DC.description" content="Pagina dedicata alla vita e alle opere di Edgar Degas, maestro della danza e della vita quotidiana parigina.">
+    <meta name="DC.publisher" content="Sofia Neamtu">
+    <meta name="DC.date" content="2025-03-13">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.language" content="it">
+    <meta name="DC.identifier" content="https://www.impressionismodigitale.com/degas.html">
+    <meta name="DC.rights" content="Copyright 2025 Sofia Neamtu">
+</head>
+<body>
+    <header class="text-white text-center p-3">
+        <h1>Impressionismo Digitale</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Cerca un artista..." onkeydown="if(event.key === 'Enter') searchArtist()">
+            <img src="https://img.icons8.com/ios/50/000000/search.png" alt="Cerca" class="search-icon" onclick="searchArtist()">
+        </div>
+        <div id="search-message" class="search-message"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="artista.html">Artisti</a></li>
+                        <li class="nav-item"><a class="nav-link" href="opera.html">Opere</a></li>
+                        <li class="nav-item"><a class="nav-link" href="progetto.html">Web Project Plan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <nav aria-label="breadcrumb" class="ms-3 mt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="artista.html">Artisti</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Edgar Degas</li>
+        </ol>
+    </nav>
+    
+    <div class="container mt-3 d-flex">
+        <aside class="col-md-3">
+            <nav class="nav flex-column p-3 rounded">
+                <a class="nav-link active" href="#vita">Vita</a>
+                <a class="nav-link" href="#analisi">Analisi delle opere</a>
+                <a class="nav-link" href="#tecniche">Tecniche pittoriche</a>
+                <a class="nav-link" href="#galleria">Galleria</a>
+                <a class="nav-link" href="#contesto">Contesto storico</a>
+            </nav>
+        </aside>
+        
+        <main class="col-md-9 text-center">
+            <div id="scroll-container">
+                <section id="vita">
+                    <h2>Vita</h2>
+                    <div class="content">
+                        <p>
+                            Edgar Degas (Parigi, 19 luglio 1834 – Parigi, 27 settembre 1917) è stato un pittore e scultore francese, considerato uno dei fondatori dell'impressionismo, anche se preferiva definirsi un realista. 
+                            La sua arte è caratterizzata da una straordinaria capacità di cogliere il movimento, specialmente nelle scene di danza e vita quotidiana.
+                        </p>
+                        <img src="src/degas.jpg" alt="Edgar Degas">
+                    </div>
+                </section>
+                
+                <section id="analisi" class="mt-4">
+                    <h2>Analisi delle Opere</h2>
+                    <div class="content">
+                        <p>
+                            Edgar Degas ha creato alcune delle opere più celebri della pittura impressionista. <strong>La classe di danza</strong> è un esempio perfetto della sua capacità di rappresentare il movimento e la spontaneità della vita quotidiana.
+                        </p>
+                        <p>
+                            Altre opere significative includono <strong>La bevitrice di assenzio</strong> e <strong>La famiglia Bellelli</strong>, che mostrano il suo interesse per la psicologia dei personaggi e l'uso innovativo della composizione e della luce.
+                        </p>
+                    </div>
+                </section>
+                
+                <section id="tecniche" class="mt-4">
+                    <h2>Tecniche Pittoriche</h2>
+                    <div class="content">
+                        <p>
+                            Degas utilizzava una tecnica molto personale, combinando pittura e pastello per ottenere effetti di luce e movimento. I suoi lavori sono caratterizzati da inquadrature innovative, spesso ispirate alla fotografia e al teatro.
+                        </p>
+                        <p>
+                            Pur essendo vicino all'impressionismo, evitava la pittura en plein air e preferiva lavorare in studio, studiando meticolosamente le pose e i gesti delle sue figure.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="galleria">
+                    <h2>Galleria</h2>
+                </section>
+
+                <div id="carouselGalleria" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="src/immagine3.jpg" alt="La classe di danza" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/immagine2_degas.jpg" alt="La bevitrice di assenzio" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/immagine3_degas.jpg" alt="La famiglia Bellelli" class="d-block w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGalleria" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGalleria" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+                <section id="contesto" class="mt-4">
+                    <h2>Contesto Storico</h2>
+                    <div class="content">
+                        <p>
+                            Degas visse in un'epoca di profonde trasformazioni sociali e artistiche. L'impressionismo rivoluzionò il modo di concepire la pittura, ponendo l'accento sulla luce e sul movimento piuttosto che sul disegno accademico.
+                        </p>
+                        <p>
+                            Tuttavia, Degas si distaccò dagli impressionisti tradizionali per il suo approccio più strutturato e analitico, ispirato alla pittura classica e alla fotografia.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    
+    <footer class="text-white text-center py-3 mt-auto">
+        <div class="info">            
+            <p class="mb-0">2025 Impressionismo Digitale - Sofia Neamtu</p>
+        </div>
+        <div class="social-media">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+        </div>          
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

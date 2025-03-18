@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <link rel="stylesheet" href="stile_artisti.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Impressionismo Digitale</title>
+        <script src="script2.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+        <meta name="DC.title" content="Artisti Impressionisti">
+        <meta name="DC.creator" content="Sofia Neamtu">
+        <meta name="DC.subject" content="Arte, Impressionismo, Artisti, Pittura">
+        <meta name="DC.description" content="Pagina dedicata ai più grandi artisti dell'Impressionismo, con approfondimenti su Monet, Renoir, Degas e Manet.">
+        <meta name="DC.publisher" content="Sofia Neamtu">
+        <meta name="DC.date" content="2025-03-13">
+        <meta name="DC.format" content="text/html">
+        <meta name="DC.language" content="it">
+        <meta name="DC.identifier" content="https://www.impressionismodigitale.com/artista.html">
+        <meta name="DC.rights" content="Copyright 2025 Sofia Neamtu">
+    </head>
+    <body>
+        <header class="text-white text-center p-3">
+            <h1>Impressionismo Digitale</h1>
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Cerca un artista..." onkeydown="if(event.key === 'Enter') searchArtist()">
+                <img src="https://img.icons8.com/ios/50/000000/search.png" alt="Cerca" class="search-icon" onclick="searchArtist()">
+            </div>
+            <div id="search-message" class="search-message"></div>
+
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="artista.html">Artisti</a></li>
+                            <li class="nav-item"><a class="nav-link" href="opera.html">Opere</a></li>
+                            <li class="nav-item"><a class="nav-link" href="progetto.html">Web Project Plan</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <nav aria-label="breadcrumb" class="ms-3 mt-2">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Artisti</li>
+            </ol>
+        </nav>
+        <div class="container mt-3 d-flex">
+            <aside class="col-md-3">
+                <nav class="nav flex-column p-3 rounded">
+                    <a class="nav-link active" href="#artisti">Artisti Impressionisti</a>
+                    <a class="nav-link" href="#monet">Claude Monet</a>
+                    <a class="nav-link" href="#renoir">Pierre-Auguste Renoir</a>
+                    <a class="nav-link" href="#degas">Edgar Degas</a>
+                    <a class="nav-link" href="#manet">Édouard Manet</a>
+                </nav>
+            </aside>
+            <main class="col-md-9 text-center">
+                <section id="artisti">
+                    <h2 class="text-center">Artisti Impressionisti</h2>
+                    <p>Scopri gli artisti che hanno rivoluzionato la pittura con l’Impressionismo.</p>
+                </section>
+
+                <div class="container mt-3">
+                    <section id="monet" class="mb-4">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="src/monet.jpg" class="img-fluid rounded-start" alt="Claude Monet">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-2">Claude Monet</h5>
+                                        <p class="card-text mb-3">Claude Monet (1840-1926) è considerato il padre dell'Impressionismo, famoso per le sue serie di dipinti su ninfee e cattedrali.</p>
+                                        <div>
+                                            <a href="monet.html" class="btn btn-primary">Scopri di più</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                
+                    <section id="renoir" class="mb-4">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="src/renoir.jpg" class="img-fluid rounded-start" alt="Pierre-Auguste Renoir">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-2">Pierre-Auguste Renoir</h5>
+                                        <p class="card-text mb-3">Renoir (1841-1919) è noto per i suoi dipinti vivaci e l'uso magistrale della luce, specialmente nei ritratti e scene di festa.</p>
+                                        <div>
+                                            <a href="monet.html" class="btn btn-primary">Scopri di più</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                
+                    <section id="degas" class="mb-4">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="src/degas.jpg" class="img-fluid rounded-start" alt="Edgar Degas">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-2">Edgar Degas</h5>
+                                        <p class="card-text mb-3">Edgar Degas (1834-1917) si distingue per le sue rappresentazioni del mondo della danza e della vita quotidiana parigina.</p>
+                                        <div>
+                                            <a href="monet.html" class="btn btn-primary">Scopri di più</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                
+                    <section id="manet" class="mb-4">
+                        <div class="card mx-auto" style="max-width: 600px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="src/manet.jpg" class="img-fluid rounded-start" alt="Édouard Manet">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title mb-2">Édouard Manet</h5>
+                                        <p class="card-text mb-3">Manet (1832-1883) è un pioniere dell'arte moderna, con opere iconiche come "Olympia" e "Le déjeuner sur l'herbe".</p>
+                                        <div>
+                                            <a href="monet.html" class="btn btn-primary">Scopri di più</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>                
+                
+            </main>
+        </div>
+        
+        <footer class="text-white text-center py-3 mt-auto">
+            <div class="info">            
+                <p class="mb-0">2025 Impressionismo Digitale - Sofia Neamtu</p>
+            </div>
+            <div class="social-media">
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+            </div>          
+        </footer>
+    </body>
+</html>

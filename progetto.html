@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <title>Web Project Plan</title>
+        <link rel="stylesheet" href="stile_progetto.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Esplora il mondo dell'Impressionismo: opere, artisti e tecniche pittoriche. Scopri Monet, Degas, Renoir e altri grandi maestri."> 
+        <meta name="author" content="Sofia Neamtu"> 
+        <title>Impressionismo Digitale</title> 
+        <script src="script.js"></script> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> 
+    </head> 
+    
+    <body> 
+        <header class="text-white text-center p-3"> 
+            <h1>Impressionismo Digitale</h1> 
+            <div class="search-bar"> 
+                <input type="text" id="searchInput" placeholder="Cerca un artista..." onkeydown="if(event.key === 'Enter') searchArtist()"> 
+                <img src="https://img.icons8.com/ios/50/000000/search.png" alt="Cerca" class="search-icon" onclick="searchArtist()"> 
+            </div> 
+            <div id="search-message" class="search-message"></div> 
+            <nav class="navbar navbar-expand-lg navbar-dark"> 
+                <div class="container"> 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
+                        <span class="navbar-toggler-icon"></span> 
+                    </button> 
+                    <div class="collapse navbar-collapse" id="navbarNav"> 
+                        <ul class="navbar-nav mx-auto"> 
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="artista.html">Artisti</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="opera.html">Opere</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="progetto.html">Web Project Plan</a></li> 
+                        </ul> 
+                    </div> 
+                </div> 
+            </nav> 
+        </header> 
+        <div class="container mt-3 d-flex">
+            <aside class="col-md-3">
+                <nav class="nav flex-column p-3 rounded">
+                    <a class="nav-link active" href="#idea">Idea</a>
+                    <a class="nav-link" href="#brief">Brief</a>
+                    <a class="nav-link" href="#benchmark">Benchmark</a>
+                    <a class="nav-link" href="#struttura">Struttura</a>
+                    <a class="nav-link" href="#layout">Layout</a>
+                    <a class="nav-link" href="#usabilita">Usabilità</a>
+                    <a class="nav-link" href="#servizi">Servizi</a>
+                    <a class="nav-link" href="#bibliografia_sitografia">Bibliografia e sitografia</a>
+                </nav>
+            </aside>
+            <main class="col-md-9">
+                <div class="section-box">
+                    <section id="idea">
+                        <h1>Idea</h1>
+                        <p>
+                            Il progetto riguarda la creazione di un sito web dedicato al movimento artistico dell'impressionismo. 
+                            Il sito esplorerà le vite e le opere di alcuni dei più grandi artisti di questo movimento, come Claude Monet, Pierre-Auguste Renoir, Edgar Degas e Édouard Manet. 
+                            Ogni artista avrà una sezione dedicata, dove verranno descritti il loro percorso artistico, le tecniche utilizzate e le opere più significative. 
+                            Verrà anche raccontata la storia dell'impressionismo, un movimento che ha cambiato il corso dell'arte, con la sua visione innovativa della luce e del colore.
+                            Per la realizzazione del sito, ho utilizzato Visual Studio, che mi ha permesso di sviluppare il codice in modo strutturato. 
+                            Le immagini delle opere e degli artisti sono state prese da Google per arricchire visivamente il contenuto. 
+                            L’obiettivo del sito è offrire ai visitatori una panoramica interessante e accessibile sull'impressionismo, permettendo loro di scoprire la bellezza e l'importanza di questo movimento.
+                        </p>
+                    </section>
+                    <section id="brief">
+                        <h1>Brief</h1>
+                        <div class="section-content">
+                            <h4>Finalità</h4>
+                            <p>
+                                Il mio obiettivo con questo progetto è creare un sito web informativo sull'impressionismo, con l'intento di far conoscere questo importante movimento artistico e i suoi principali protagonisti,
+                                 come Monet, Renoir, Degas e Manet. Lo scopo è educare e coinvolgere il pubblico, offrendo un'esperienza interattiva che permetta di esplorare le vite degli artisti, le loro opere e il contesto storico dell'impressionismo. 
+                                 Mi pongo l’obiettivo di realizzare una risorsa online che possa essere facilmente fruibile da chiunque sia interessato a conoscere l'arte impressionista, favorendo la comprensione e l’apprezzamento di questo movimento che ha rivoluzionato la pittura.
+                            </p>
+                            <h4>Pubblico</h4>
+                            <p>
+                                Il pubblico a cui mi rivolgo è variegato: studenti di arte, appassionati di pittura, e chiunque sia interessato a scoprire la storia dell'impressionismo. 
+                                Potrebbero esserci diversi gruppi target, come quelli interessati all’aspetto storico, quelli affascinati dalle biografie degli artisti, o coloro che desiderano approfondire le tecniche pittoriche. 
+                                Il sito sarà accessibile a tutti, ogni visitatore potrà navigare liberamente tra le sezioni del sito, leggere le biografie degli artisti, 
+                                esplorare le opere attraverso gallerie di immagini e apprendere la storia del movimento artistico.
+                            </p>
+                            <h4>Accesso</h4>
+                            <p>
+                                Il sito sarà costruito in modo da permettere un accesso semplice e intuitivo. 
+                                La comunicazione sarà principalmente testuale, ma con l'integrazione di immagini per illustrare le opere e i momenti storici descritti. 
+                                Non sono previsti contenuti audio o video, però il design è pensato per essere multipiattaforma, quindi il sito sarà ottimizzato per dispositivi mobili, tablet e desktop, 
+                                garantendo una fruizione fluida e un'ottima esperienza utente su tutte le piattaforme.
+                            </p>
+                            <h4>Contenuti e Dati</h4>
+                            <p>
+                                I contenuti principali sono stati reperiti online, in particolare per le immagini delle opere e per le biografie degli artisti. 
+                                Le risorse provengono da Google e da fonti pubbliche legate alla storia dell’arte. 
+                                Il sito conterrà una sezione che presenta ciascun artista con una descrizione approfondita, seguita dalle loro opere più significative, accompagnate da un'analisi delle tecniche utilizzate.
+                            </p>
+                        </div>
+                    </section>                    
+                    <section id="benchmark">
+                        <h1>Benchmark</h1>
+                        <div class="section-content">
+                            <h4>Analisi di Mercato</h4>
+                            <p>
+                                Esistono già diversi siti che trattano l’Impressionismo, come articoli divulgativi o approfondimenti accademici. 
+                                Tuttavia, molti di questi presentano il contenuto in modo testuale e poco interattivo, senza offrire un’esperienza visiva coinvolgente o strumenti innovativi per esplorare le opere. 
+                                Il mio progetto punta a colmare questa lacuna, combinando una grafica moderna, una navigazione intuitiva e contenuti multimediali per rendere l’apprendimento più dinamico e immersivo.
+                            </p>
+                    
+                            <h4>Caratteristiche di Altri Progetti Utilizzabili</h4>
+                            <p>
+                                Alcuni elementi presenti in siti esistenti potrebbero essere integrati nel mio progetto per migliorarne la qualità e l’usabilità:
+                            </p>
+                            <ul>
+                                <li>**Struttura chiara**: Entrambi i siti analizzati presentano i contenuti divisi in sezioni (storia, artisti, opere), una suddivisione utile per facilitare la consultazione.</li>
+                                <li>**Testi semplici e divulgativi**: I siti utilizzano un linguaggio accessibile, senza eccessivi tecnicismi, rendendo le informazioni fruibili anche a chi non ha conoscenze artistiche approfondite.</li>
+                                <li>**Immagini esplicative**: L’uso di immagini per accompagnare le spiegazioni è efficace, ma potrebbe essere migliorato con funzionalità interattive, come zoom su dettagli o collegamenti tra opere e biografie degli artisti.</li>
+                            </ul>
+                            <h4>Analisi di Due Siti Concorrenti</h4>
+                    
+                            <h5>1. Studenti.it - Impressionismo</h5>
+                            <p>
+                                Questo sito offre un articolo informativo sull’Impressionismo, con una spiegazione delle sue caratteristiche principali, degli artisti più importanti e delle loro opere più celebri. 
+                                Il linguaggio è chiaro e adatto a studenti, ma il sito è principalmente testuale e non include strumenti interattivi o elementi multimediali avanzati.
+                            </p>
+                    
+                            <h5>2. Elle Decor - Impressionismo</h5>
+                            <p>
+                                L’articolo di Elle Decor analizza l'Impressionismo con un taglio più editoriale, arricchito da immagini di opere famose. 
+                                Il contenuto è ben scritto e visivamente curato, ma rimane un approfondimento statico, senza la possibilità di esplorare le opere in modo interattivo o approfondire i singoli artisti attraverso percorsi personalizzati.
+                            </p>
+                            <p>
+                                Il mio sito si differenzierà offrendo un’esperienza più interattiva, grazie a un sistema che permette di esplorare alcune opere con dettagli evidenziati. 
+                                Attraverso punti interattivi, gli utenti potranno scoprire curiosità, tecniche pittoriche e approfondimenti direttamente sulle immagini dei dipinti, rendendo l’apprendimento più coinvolgente e dinamico.
+                            </p>                            
+                        </div>
+                    </section>                    
+                    <section id="struttura">
+                        <h1>Struttura</h1>
+                        <div class="section-content">
+                            <h4>Mappa dei concetti</h4>
+                            <p>Per la creazione della mappa è stato necessario utilizzare alcuni elementi della modellazione concettuale, utilizzando un diagramma E-R nella quale abbiamo entità rappresentate da rettangoli e relazioni rappresentati da rombi.</p>
+                            <img src="src/diagrammaER.png" alt="diagramma ER">
+                            <h4>Schema delle dipendenze</h4>
+                            <p>Dalla <strong>home page</strong>, tramite il <strong>menu di navigazione principale</strong> (TopNav), l'utente può accedere alle principali sezioni del sito:</p>
+        
+                            <ul>
+                                <li><strong>Opere</strong>: La pagina delle opere permette all'utente di visualizzare un elenco delle opere disponibili. Ogni opera è accompagnata da informazioni di base, come il titolo, l'artista e l'anno di creazione.</li>
+                                <li><strong>Artisti</strong>: La pagina degli artisti permette di esplorare l'elenco di tutti gli artisti presenti nel sito. Cliccando su un artista, l'utente viene indirizzato alla <strong>pagina di dettaglio dell'artista</strong>, che include informazioni approfondite sull'artista e le opere a lui attribuite.</li>
+                                <li><strong>Pagina di Dettaglio dell'Artista</strong>: Quando l'utente seleziona un artista dalla lista degli artisti, viene reindirizzato alla sua pagina di approfondimento, che include una biografia dettagliata, un elenco delle opere principali, e altre informazioni relative alla vita e all'arte dell'artista.</li>
+                            </ul>
+
+                            <p><strong>Flusso di navigazione e interazioni principali:</strong></p>
+                            <ul>
+                                <li><strong>Home page</strong> → <strong>Opere</strong> (elenco delle opere)</li>
+                                <li><strong>Home page</strong> → <strong>Artisti</strong> (elenco degli artisti)</li>
+                                <li><strong>Pagina degli artisti</strong> → <strong>Dettaglio dell'artista</strong> (approfondimento sull'artista)</li>
+                                <li><strong>Pagina delle opere</strong> → <strong>Artisti</strong> (link all'artista di ciascuna opera)</li>
+                                <li><strong>Pagina dei dettagli dell'artista</strong> → <strong>Opere</strong> (link alle opere dell'artista)</li>
+                            </ul>
+
+                            <p>Ogni pagina di dettaglio dell'artista è corredata di link per permettere agli utenti di tornare facilmente alla lista delle opere o navigare verso altri artisti, creando un'esperienza interattiva e fluida tra le diverse sezioni del sito.</p>
+                            <img src="src/servizi.png" alt="schema delle delle dipendenze">
+                            <h4>Categorie</h4>
+                            <p>Ogni oggetto della collezione è descritto attraverso una serie di etichette che ne definiscono le caratteristiche principali. Le categorie e le etichette per ogni elemento includono:</p>
+        
+                            <ul>
+                                <li><strong>Titolo dell'Opera</strong>: Il nome dell'opera d'arte, che permette di identificarla facilmente.</li>
+                                <li><strong>Artista</strong>: Il nome dell'artista che ha creato l'opera.</li>
+                                <li><strong>Periodo/Anno di Creazione</strong>: Indica l'anno o il periodo storico in cui l'opera è stata realizzata.</li>
+                                <li><strong>Corrente Artistica</strong>: La corrente stilistica a cui l'opera appartiene ovvero l'Impressionismo.</li>
+                                <li><strong>Descrizione</strong>: Un breve testo che fornisce dettagli sull'opera, la sua storia, il contesto o la tecnica utilizzata.</li>
+                                <li><strong>Collezione</strong>: Gruppo di opere simili o collegate da una tematica o corrente artistica.</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="layout">
+                        <h1>Layout</h1>
+                        <div class="section-content">
+                            <h4>Struttura Home</h4>
+                            <img src="src/struttura1.png">
+                            <h4>Struttura pagina artista</h4>
+                            <img src="src/strutturaArtista.png">
+                            <img src="src/strutturaSingoloArtista.png">
+                            <h4>Struttura pagina opere</h4>
+                            <img src="src/strutturaOpere.png">
+                        </div>
+                    </section>
+                    <section id="usabilita">
+                        <h1>Usabilità</h1>
+                        <div class="section-content">
+                            <p>Il sito è progettato per garantire un’esperienza utente intuitiva, accessibile e coerente su tutti i dispositivi, grazie a un'architettura ben strutturata, un aspetto visivo armonioso e un uso attento di colori, icone e font.</p>
+                    
+                            <h4>Architettura</h4>
+                            <ul>
+                                <li><strong>Struttura chiara e organizzata</strong>: il sito è suddiviso in sezioni logiche (home, artisti, opere) per facilitare la navigazione.</li>
+                                <li><strong>Menu di navigazione fisso</strong>: sempre visibile in alto, con voci ben distinte e un'icona per il menu a tendina.</li>
+                                <li><strong>Sezioni distinte e box informativi</strong>: ogni sezione ha uno spazio ben definito per migliorare la leggibilità.</li>
+                                <li><strong>Ricerca interna</strong>: presente nella home, attraverso parole chiave, per trovare facilmente contenuti specifici.</li>
+                                <li><strong>Ricerca</strong>: barra di ricerca per trovare gli artisti correlati al movimento artistico</li>
+                                <li><strong>Footer chiaro e funzionale</strong>: include link rapidi, contatti e social media.</li>
+                            </ul>
+                    
+                            <h4>Aspetto e Tipografia</h4>
+                            <ul>
+                                <li><strong>Stile moderno e minimale</strong>: il design punta sulla semplicità e sulla leggibilità.</li>
+                                <li><strong>Gerarchia visiva chiara</strong>: titoli grandi, sottotitoli ben evidenti e paragrafi con spaziatura adeguata.</li>
+                                <li><strong>Feedback visivi</strong>: i pulsanti cambiano colore al passaggio del mouse e i link sono evidenziati per una migliore interazione.</li>
+                                <li><strong>Responsive design</strong>: il sito si adatta automaticamente a desktop, tablet e smartphone.</li>
+                            </ul>
+                    
+                            <h4>Colori, Icone e Font</h4>
+                            <ul>
+                                <li><strong>Palette di colori equilibrata</strong>: tonalità neutre arricchite da accenti cromatici per mettere in risalto gli elementi chiave.</li>                                
+                                <li><strong>Icone intuitive</strong>: utilizzate per migliorare la comprensione e guidare l'utente.</li>
+                                <li><strong>Font leggibili</strong>: il sito utilizza <code>Arial, sans-serif</code>, un carattere chiaro e adatto a qualsiasi dispositivo.</li>
+                                <li><strong>Contrasti ottimali</strong>: colori ben bilanciati per garantire un’ottima leggibilità e accessibilità.</li>
+                            </ul>
+                    
+                            <p>Questi principi garantiscono un’esperienza d’uso fluida e inclusiva, rendendo il sito accessibile e piacevole per tutti gli utenti.</p>
+                        </div>
+                    </section>                    
+                    <section id="servizi">
+                        <h1>Servizi</h1>
+                        <div class="section-content">
+                            <p>Il sito offre diversi strumenti per migliorare l’accesso e l’esperienza dell’utente, integrando sistemi di browsing avanzati, utilities interattive e metodi innovativi per valorizzare la fruizione dei contenuti.</p>
+                    
+                            <h4>Sistemi di Browsing Aggiuntivi</h4>
+                            <ul>
+                                <li><strong>Tag e Parole Chiave</strong> Un sistema di tag associati agli oggetti per permettere una ricerca semantica più libera.</li>
+                                <li><strong>Timeline interattiva</strong>: sviluppo cronologico dell'Impressionismo con le principali tappe e avvenimenti storici.</li>                                
+                                <li><strong>Contenuti correlati</strong>: suggerimenti automatici per scoprire opere, artisti o articoli affini a quelli visualizzati.</li>
+                            </ul>
+                    
+                            <h4>Utilities e Tools</h4>
+                            <ul>
+                                <li><strong>Visualizzatore 3D</strong>: permette di esplorare opere d’arte in tre dimensioni per una visione più dettagliata.</li>
+                                <li><strong>Modalità notturna</strong>: funzione per ridurre l'affaticamento visivo adattando i colori del sito.</li>
+                                <li><strong>Assistente vocale</strong>: lettura automatizzata dei contenuti per utenti con disabilità visive o preferenze audio.</li>
+                                <li><strong>Download e condivisione</strong>: possibilità di scaricare immagini in alta risoluzione e condividere contenuti su social media.</li>
+                                <li><strong>Commenti e recensioni</strong>: sezione interattiva per lasciare opinioni e valutazioni sulle opere e sugli artisti.</li>
+                            </ul>
+                    
+                            <h4>Strumenti per Valorizzare l'Accesso</h4>
+                            <ul>
+                                <li><strong>Newsletter personalizzata</strong>: aggiornamenti periodici sugli artisti o le opere preferite.</li>
+                                <li><strong>Tour virtuali</strong>: esperienze immersive per esplorare collezioni e gallerie online.</li>
+                                <li><strong>Gamification</strong>: quiz e sfide interattive per coinvolgere gli utenti e rendere l'esperienza più dinamica.</li>
+                                <li><strong>Integrazione con intelligenza artificiale</strong>: suggerimenti personalizzati basati sulle preferenze dell’utente.</li>
+                                <li><strong>Accessibilità migliorata</strong>: compatibilità con screen reader, navigazione da tastiera e traduzioni automatiche.</li>
+                            </ul>
+                    
+                            <p>Questi strumenti e servizi garantiscono un accesso più ricco, personalizzato e coinvolgente, rendendo la navigazione fluida e interattiva per tutti gli utenti.</p>
+                        </div>
+                    </section>                    
+                    <section id="bibliografia">
+                        <h1>Bibliografia</h1>
+                        <div class="section-content">
+                            <p>Di seguito sono riportati i riferimenti bibliografici e sitografici relativi alle fonti impiegate per la realizzazione del sito.</p>
+
+                            <h4>Testi</h4>
+                            <ul>
+                                <li>Wikipedia - Varie voci consultate.</li>
+                                <li>Studenti.it - Articoli di riferimento.</li>
+                                <li>Elle Decor Italia - "Impressionismo: storia, opere e caratteristiche".</li>
+                            </ul>
+
+                            <h4>Immagini ed Eventuali Risorse Multimediali</h4>
+                            <ul>
+                                <li>Immagini reperite da Internet.</li>
+                                <li>Wikipedia - Sezione immagini.</li>
+                            </ul>
+
+                            <h4>Strumenti</h4>
+                            <ul>
+                                <li>Editor di codice: Visual Studio Code.</li>
+                                <li>Software per wireframe e mappe: draw.io</li>
+                            </ul>
+
+                            <h4>Tool</h4>
+                            <ul>
+                                <li>Framework utilizzato: Bootstrap</li>
+                            </ul>
+
+                            <h4>Applicazioni e Componenti Diverse</h4>
+                            <ul>
+                                <li>Linguaggio di programmazione: JavaScript.</li>
+                            </ul>
+
+                            <p>Le fonti qui elencate garantiscono l'affidabilità e la qualità delle informazioni presenti nel sito, fornendo riferimenti chiari e verificabili.</p>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

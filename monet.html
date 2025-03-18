@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Monet</title>
+    <link rel="stylesheet" href="stile_artisti.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="script2.js"></script>
+
+    <meta name="DC.title" content="Claude Monet - Impressionismo Digitale">
+    <meta name="DC.creator" content="Sofia Neamtu">
+    <meta name="DC.subject" content="Arte, Impressionismo, Claude Monet, Pittura">
+    <meta name="DC.description" content="Pagina dedicata alla vita e alle opere di Claude Monet, padre dell'Impressionismo.">
+    <meta name="DC.publisher" content="Sofia Neamtu">
+    <meta name="DC.date" content="2025-03-13">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.language" content="it">
+    <meta name="DC.identifier" content="https://www.impressionismodigitale.com/monet.html">
+    <meta name="DC.rights" content="Copyright 2025 Sofia Neamtu">
+</head>
+<body>
+    <header class="text-white text-center p-3">
+        <h1>Impressionismo Digitale</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Cerca un artista..." onkeydown="if(event.key === 'Enter') searchArtist()">
+            <img src="https://img.icons8.com/ios/50/000000/search.png" alt="Cerca" class="search-icon" onclick="searchArtist()">
+        </div>
+        <div id="search-message" class="search-message"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="artista.html">Artisti</a></li>
+                        <li class="nav-item"><a class="nav-link" href="opera.html">Opere</a></li>
+                        <li class="nav-item"><a class="nav-link" href="progetto.html">Web Project Plan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <nav aria-label="breadcrumb" class="ms-3 mt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="artista.html">Artisti</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Claude Monet</li>
+        </ol>
+    </nav>
+    
+    <div class="container mt-3 d-flex">
+        <aside class="col-md-3">
+            <nav class="nav flex-column p-3 rounded">
+                <a class="nav-link active" href="#vita">Vita</a>
+                <a class="nav-link" href="#analisi">Analisi delle opere</a>
+                <a class="nav-link" href="#tecniche">Tecniche pittoriche</a>
+                <a class="nav-link" href="#galleria">Galleria</a>
+                <a class="nav-link" href="#contesto">Contesto storico</a>
+            </nav>
+        </aside>
+        
+        <main class="col-md-9 text-center">
+            <div id="scroll-container">
+                <section id="vita">
+                    <h2>Vita</h2>
+                    <div class="content">
+                        <p>
+                            Oscar-Claude Monet (Parigi, 14 novembre 1840 – Giverny, 5 dicembre 1926) è stato un pittore francese, considerato uno dei fondatori dell'impressionismo francese e certamente il più coerente e prolifico del movimento. 
+                            I suoi lavori si distinguono per la rappresentazione della sua immediata percezione dei soggetti, in modo particolare per quanto riguarda la paesaggistica e la pittura en plein air.
+                        </p>
+                        <img src="src/monet.jpg" alt="Claude Monet">
+                    </div>
+                </section>
+                                    
+                <section id="analisi" class="mt-4">
+                    <h2>Analisi delle Opere</h2>
+                    <div class="content">
+                        <p>
+                            Claude Monet ha creato alcune delle opere più iconiche della storia dell'arte. La sua pittura si concentra spesso sulla luce e sul cambiamento atmosferico. Un esempio fondamentale è <strong>Impressione, levar del sole</strong>, che ha dato il nome al movimento impressionista. L'opera mostra la luce morbida dell'alba che illumina il porto di Le Havre, con pennellate veloci che catturano l'effetto fugace della luce e delle ombre.
+                        </p>
+                        <p>
+                            Altre opere significative sono <strong>I papaveri</strong> e <strong>Le ninfee</strong>, in cui Monet esplora ulteriormente il tema della luce naturale e dell'ambiente circostante. La sua abilità nell'uso dei colori e nella creazione di effetti luminosi è evidente in tutte queste opere.
+                        </p>
+                    </div>
+                </section>
+                
+                <section id="tecniche" class="mt-4">
+                    <h2>Tecniche Pittoriche</h2>
+                    <div class="content">
+                        <p>
+                            Monet è noto per il suo stile pittorico innovativo. Utilizzando pennellate rapide e brevi, rifiutò le tecniche tradizionali di dettaglio finito e sfumature. La sua tecnica en plein air (all'aria aperta) gli consentì di catturare la luce naturale in modo immediato. Usò colori puri, evitando bianchi e neri, per creare contrasti vibranti che esprimessero l'intensità del paesaggio. 
+                        </p>
+                        <p>
+                            Monet applicò spesso più strati di colore per creare effetti atmosferici, come nel caso della serie delle Ninfee. Le sue pennellate erano disordinate ma estremamente precise nel trasmettere la sensazione di un momento preciso nel tempo.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="galleria">
+                    <h2>Galleria</h2>
+                </section>
+                
+                <div id="carouselGalleria" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="src/immagine1.jpg" class="d-block w-100" alt="Impressione, levar del sole">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/immagine2_monet.jpg" class="d-block w-100" alt="Papaveri">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/immagine3_monet.jpg" class="d-block w-100" alt="Ninfee">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGalleria" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Precedente</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGalleria" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Successivo</span>
+                    </button>
+                </div>
+                
+                
+                <section id="contesto" class="mt-4">
+                    <h2>Contesto Storico</h2>
+                    <div class="content">
+                        <p>
+                            Monet visse in un periodo di grandi cambiamenti sociali e tecnologici. La Francia del XIX secolo stava vivendo l'industrializzazione e il rapido sviluppo delle città, un contrasto con la bellezza naturale che il pittore cercò di catturare. Il movimento impressionista, che rifiutava le rigide regole accademiche, era un modo per celebrare la bellezza del mondo che cambiava rapidamente, facendo emergere la modernità nel cuore della tradizione.
+                        </p>
+                        <p>
+                            Monet, come altri impressionisti, cercò di rappresentare il mondo attraverso la luce, la natura e la vita quotidiana, evitando le scene storiche e mitologiche che predominavano nell'arte accademica dell'epoca.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    
+    <footer class="text-white text-center py-3 mt-auto">
+        <div class="info">            
+            <p class="mb-0">2025 Impressionismo Digitale - Sofia Neamtu</p>
+        </div>
+        <div class="social-media">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+        </div>          
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>

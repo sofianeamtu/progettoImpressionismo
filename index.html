@@ -1,0 +1,243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html> 
+    <head> 
+        <link rel="stylesheet" href="stile.css"/> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Impressionismo Digitale</title> 
+        <script src="script.js"></script> 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> 
+
+        <meta name="DC.title" content="Impressionismo Digitale - Home">
+        <meta name="DC.creator" content="Sofia Neamtu">
+        <meta name="DC.subject" content="Arte, Impressionismo, Pittura, Artisti">
+        <meta name="DC.description" content="Un sito dedicato al movimento impressionista e ai suoi principali artisti, con approfondimenti e gallerie d'arte.">
+        <meta name="DC.publisher" content="Sofia Neamtu">
+        <meta name="DC.date" content="2025-03-13">
+        <meta name="DC.format" content="text/html">
+        <meta name="DC.language" content="it">
+        <meta name="DC.identifier" content="https://www.impressionismodigitale.com/index.html">
+        <meta name="DC.rights" content="Copyright 2025 Sofia Neamtu">
+    </head> 
+    
+    <body> 
+        <header class="text-white text-center p-3"> 
+            <h1>Impressionismo Digitale</h1> 
+            <div class="search-bar"> 
+                <input type="text" id="searchInput" placeholder="Cerca un artista..." onkeydown="if(event.key === 'Enter') searchArtist()"> 
+                <img src="src/icons8-ricerca-50.png" alt="Cerca" class="search-icon" onclick="searchArtist()"> 
+            </div> 
+            <nav class="navbar navbar-expand-lg navbar-dark"> 
+                <div class="container"> 
+                    <div class="collapse navbar-collapse" id="navbarNav"> 
+                        <ul class="navbar-nav mx-auto"> 
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="artista.html">Artisti</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="opera.html">Opere</a></li> 
+                            <li class="nav-item"><a class="nav-link" href="progetto.html">Web Project Plan</a></li> 
+                        </ul> 
+                    </div> 
+                </div> 
+            </nav> 
+            <div class="dropdown">
+                <button class="btn btn-light" type="button" id="userMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                    </svg>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userMenu">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="register.html">Registrati</a></li>
+                </ul>
+            </div>
+        </header> 
+    
+        <div class="main-container">
+            <aside class="col-md-2" id="sidebar">
+                <h2>Parole Chiave</h2>
+                <ul id="keyword-list"></ul>
+            </aside>
+        
+            <main class="col-md-10" id="main-content">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-lg-8">
+                        <h2 class="text-left mb-4">Impressionismo, il movimento d'avanguardia per eccellenza</h2>
+                        <p class="text-left">
+                            Un viaggio alla scoperta dell'arte impressionista, con opere ad alta risoluzione, analisi dettagliate e una galleria interattiva.<br>
+                            Approfondimento di storia dell'arte sulle caratteristiche, gli esponenti e le opere più importanti di questo movimento artistico
+                        </p>
+
+                        <section id="indice" class="bg-white rounded shadow-sm p-4 my-4">
+                            <h2 class="h3 mb-3 text-left">Indice</h2>
+                            <ol class="main-list ps-3 text-left">
+                                <li><a href="#prima-impressionismo">Prima dell'Impressionismo</a></li>
+                                <li><a href="#nascita-impressionismo">L'Impressionismo: tutto nasce dalla luce</a></li>
+                                <li><a href="#analisi-monet">La Grenouillère di Claude Monet: analisi dell'opera</a></li>
+                                <li><a href="#impressione">L'impressione: come si sviluppa il movimento</a></li>
+                                <li><a href="#grande-rifiuto">Il grande rifiuto dell'Impressionismo</a></li>
+                                <li><a href="#concetti-chiave">Concetti chiave dell'Impressionismo</a></li>
+                                <li><a href="#galleria-artisti">Galleria degli artisti</a></li>
+                                <li><a href="#cronologia">Cronologia del movimento</a></li>
+                            </ol>
+                        </section>
+                        
+                        <section id="prima-impressionismo" class="mb-4">
+                            <h2 class="h3 mb-3 text-left">Prima dell'Impressionismo</h2>
+                            <p class="text-left">Prima che nascesse il movimento dell'<strong>Impressionismo</strong>, l'arte europea era dominata da stili <em>accademici</em> e <em>classici</em>. Gli artisti si concentravano su temi <em>storici</em>, <em>religiosi</em> e <em>mitologici</em>, cercando di rappresentare la realtà in modo preciso e dettagliato. Il <strong>Romanticismo</strong> aveva introdotto una maggiore enfasi sull'<em>emozione</em>, ma gli artisti ancora si rifacevano a modelli tradizionali. Il periodo precedente l'Impressionismo era caratterizzato da una forte influenza della pittura <strong>realista</strong>, che si concentrava sulla rappresentazione veritiera della vita quotidiana. Questo contesto fu fondamentale per il cambiamento che sarebbe arrivato con gli impressionisti.</p>
+                        </section>
+
+                        <section id="nascita-impressionismo" class="mb-4">
+                            <h2 class="h3 mb-3 text-left">L'Impressionismo: tutto nasce dalla luce</h2>
+                            <p class="text-left">L'<strong>Impressionismo</strong> nacque come reazione contro il rigore <strong>accademico</strong> e le convenzioni pittoriche del tempo. I pittori impressionisti volevano catturare l'atmosfera di un momento preciso, giocando con la <strong>luce naturale</strong> e la <strong>percezione visiva</strong>, piuttosto che concentrarsi su dettagli minuziosi. La <strong>luce</strong> e il <strong>colore</strong> divennero i protagonisti delle loro opere, utilizzando <em>pennellate veloci</em> e abbondanti per riflettere le <strong>variazioni di luce</strong> nel tempo e nello spazio. Claude Monet, con la sua celebre opera "<em>Impression, soleil levant</em>", fu uno dei primi a mettere in pratica questa tecnica, da cui poi il movimento prese il nome. La <strong>luminosità</strong> e la <strong>vitalità</strong> delle loro opere sfidavano le tecniche tradizionali e creavano una nuova visione dell'arte.</p>
+                        </section>
+
+                        <section id="analisi-monet" class="mb-4">
+                            <h2 class="h3 mb-3 text-left">La Grenouillère di Claude Monet: analisi dell'opera</h2>
+                            <p class="text-left"><strong>La Grenouillère</strong> è un famoso dipinto di <strong>Claude Monet</strong> che cattura l'atmosfera di una scena all'aperto nella sua tipica <strong>luce impressionista</strong>. L'opera mostra una scena di vita quotidiana alla "Grenouillère", un luogo di svago lungo la Senna, con una vista su <em>barche</em> e <em>persone</em>. Monet utilizza <strong>pennellate rapide</strong> e veloci per trasmettere l'effetto della luce che riflette sulle <strong>acque</strong> e sulle superfici. Le <strong>linee morbide</strong> e la <strong>palette di colori vivaci</strong> contribuiscono a trasmettere una sensazione di <em>movimento</em> e <em>cambiamento</em>, elementi chiave dell'Impressionismo. Questa pittura segna un momento importante nella carriera di Monet e rappresenta perfettamente l'idea di "immortalare l'<strong>impressione</strong>" di un paesaggio in un dato istante.</p>
+                        </section>
+
+                        <section id="impressione" class="mb-4">
+                            <h2 class="h3 mb-3 text-left">L'impressione: come si sviluppa il movimento</h2>
+                            <p class="text-left">Il movimento <strong>impressionista</strong> si sviluppò a partire dal 1860, quando un gruppo di giovani artisti si unì per sfidare le tradizioni pittoriche dell'epoca. I pittori impressionisti, tra cui <strong>Claude Monet</strong>, <strong>Edgar Degas</strong>, <strong>Pierre-Auguste Renoir</strong>, e altri, si concentravano sull'effetto della <strong>luce</strong> e sulla cattura di momenti <strong>fugaci</strong> attraverso l'uso di <strong>pennellate libere</strong> e colori brillanti. La loro intenzione non era più quella di riprodurre una realtà perfetta, ma di esprimere una visione <strong>personale</strong> ed emozionale del mondo. La loro scelta di dipingere <strong>all'aperto</strong>, invece che nei tradizionali studi, li portò a scoprire come la <strong>luce naturale</strong> potesse trasformare un soggetto. Il movimento, inizialmente criticato, cominciò a guadagnare sostenitori e riconoscimento grazie alla loro capacità di rompere con le convenzioni artistiche.</p>
+                        </section>
+
+                        <section id="grande-rifiuto" class="mb-4">
+                            <h2 class="h3 mb-3 text-left">Il grande rifiuto dell'Impressionismo</h2>
+                            <p class="text-left">All'inizio, il movimento <strong>impressionista</strong> fu fortemente criticato e rifiutato dalla <strong>critica ufficiale</strong> e dal <strong>pubblico</strong>. Nel 1874, quando gli impressionisti decisero di organizzare la loro prima mostra <strong>indipendente</strong>, il termine "<strong>impressionismo</strong>" fu coniato in modo dispregiativo da un critico d'arte. Gli artisti non venivano accettati dal <strong>Salon</strong> ufficiale e le loro opere venivano considerate incomplete o troppo sperimentali. Tuttavia, questo <strong>rifiuto</strong> spinse gli impressionisti a organizzare mostre alternative e a costruire una comunità di sostenitori. Con il passare degli anni, grazie alla determinazione dei pittori e al sostegno di mercanti d'arte come <strong>Paul Durand-Ruel</strong>, il movimento guadagnò sempre più popolarità e fu finalmente accettato dal pubblico e dai collezionisti.</p>
+                        </section>
+
+                        <section id="concetti-chiave" class="mb-4">
+                            <h2 class="h3 mb-3 text-left">Concetti chiave dell'Impressionismo</h2>
+                            <p class="text-left">Il movimento <strong>impressionista</strong> è definito da alcuni concetti chiave che lo distinguono dagli stili precedenti. Primo fra tutti è l'uso della <strong>luce</strong>: gli impressionisti cercavano di catturare gli effetti della <strong>luce naturale</strong>, variabile a seconda dell'ora del giorno e delle condizioni atmosferiche. Un altro concetto fondamentale è l'uso di <strong>colori vivaci</strong> e di <strong>pennellate veloci</strong> e visibili, che riflettono l'immediatezza e la dinamicità del momento. Gli impressionisti si concentravano anche sulla rappresentazione di <strong>paesaggi</strong>, scene di <strong>vita quotidiana</strong> e soggetti moderni, rompendo con i temi storici e mitologici prevalenti in passato. Questi principi, che sfidano le convenzioni artistiche del tempo, hanno contribuito a plasmare l'arte <strong>moderna</strong> e ad aprire la strada a nuovi sviluppi nell'arte del XX secolo.</p>
+                        </section>
+
+                        <section id="galleria-artisti" class="gallery">
+                            <div class="artwork">
+                                <a href="monet.html">
+                                    <img src="src/immagine1.jpg" alt="Impressione, levar del sole - Claude Monet">
+                                    <div class="overlay">
+                                        <p>Claude Monet</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="artwork">
+                                <a href="renoir.html">
+                                    <img src="src/immagine2.jpg" alt="Bal au moulin de la Galette - Pierre-Auguste Renoir">
+                                    <div class="overlay">
+                                        <p>Pierre-Auguste Renoir</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="artwork">
+                                <a href="degas.html">
+                                    <img src="src/immagine3.jpg" alt="La classe di danza - Edgar Degas">
+                                    <div class="overlay">
+                                        <p>Edgar Degas</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="artwork">
+                                <a href="manet.html">
+                                    <img src="src/immagine4.jpg" alt="Colazione sull'erba - Édouard Manet">
+                                    <div class="overlay">
+                                        <p>Édouard Manet</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </section>
+                        <div class="d-flex justify-content-center w-100 my-4">
+                            <a href="artista.html" class="btn btn-primary">Scopri gli artisti</a>
+                        </div>
+            
+                        <section id="cronologia" class="timeline position-relative py-4">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="timeline-container position-relative">
+                                        <div class="timeline-item mb-4 pb-2 border-bottom">
+                                            <div class="timeline-date fw-bold mb-2 text-left">1860</div>
+                                            <div class="timeline-content text-left">
+                                                <h5 class="text-left">Formazione del Gruppo Impressionista</h5>
+                                                <p>I giovani artisti decidono di unire le forze per organizzare mostre indipendenti dopo essere stati rifiutati dal Salon.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Altre voci della timeline -->
+                                        <div class="timeline-item mb-4 pb-2 border-bottom">
+                                            <div class="timeline-date fw-bold mb-2 text-left">1863</div>
+                                            <div class="timeline-content text-left">
+                                                <h5 class="text-left">Salon des Refusés</h5>
+                                                <p>Il Salon des Refusés espone le opere rifiutate dal Salon ufficiale, tra cui alcune opere che sarebbero diventate iconiche del movimento impressionista.</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item mb-4 pb-2 border-bottom">
+                                            <div class="timeline-date fw-bold mb-2 text-left">1874</div>
+                                            <div class="timeline-content text-left">
+                                                <h5 class="text-left">Prima Mostra Impressionista</h5>
+                                                <p>Si tiene a Parigi la prima mostra indipendente degli impressionisti, dove viene esposta l'opera di Claude Monet 'Impressione, levar del sole'.</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item mb-4 pb-2 border-bottom">
+                                            <div class="timeline-date fw-bold mb-2 text-left">1877</div>
+                                            <div class="timeline-content text-left">
+                                                <h5 class="text-left">Seconda Mostra Impressionista</h5>
+                                                <p>Una delle mostre più importanti del gruppo, che segnò l'inizio dell'affermazione del movimento tra il pubblico e la critica.</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item mb-4 pb-2 border-bottom">
+                                            <div class="timeline-date fw-bold mb-2 text-left">1883</div>
+                                            <div class="timeline-content text-left">
+                                                <h5 class="text-left">Claude Monet a Giverny</h5>
+                                                <p>Monet si trasferisce a Giverny, dove dipingerà le sue celebri Ninfee, una delle serie più iconiche della storia dell'arte.</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item mb-4 pb-2 border-bottom">
+                                            <div class="timeline-date fw-bold mb-2 text-left">1880</div>
+                                            <div class="timeline-content text-left">
+                                                <h5 class="text-left">Accettazione Pubblica</h5>
+                                                <p>Il movimento impressionista comincia ad essere accettato dal pubblico grazie al sostegno del governo.</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item mb-4 pb-2 border-bottom">
+                                            <div class="timeline-date fw-bold mb-2 text-left">1889</div>
+                                            <div class="timeline-content text-left">
+                                                <h5 class="text-left">Esposizione Universale di Parigi</h5>
+                                                <p>Le opere degli impressionisti sono esposte all'Esposizione Universale di Parigi, contribuendo a rendere il movimento conosciuto a livello internazionale.</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item mb-4 pb-2 border-bottom">
+                                            <div class="timeline-date fw-bold mb-2 text-left">1886</div>
+                                            <div class="timeline-content text-left">
+                                                <h5 class="text-left">Arrivo negli Stati Uniti</h5>
+                                                <p>Le opere impressioniste vengono esposte negli Stati Uniti grazie all'artista Mary Cassatt, portando al loro grande successo.</p>
+                                            </div>
+                                        </div>
+                                        <div class="timeline-item mb-4 pb-2 border-bottom">
+                                            <div class="timeline-date fw-bold mb-2 text-left">1894</div>
+                                            <div class="timeline-content text-left">
+                                                <h5>Ultima Mostra Impressionista</h5>
+                                                <p>L'ultima grande mostra del movimento impressionista segna la fine del gruppo unito, anche se l'influenza dell'Impressionismo rimarrà forte.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="text-white text-center py-3 mt-auto">
+            <div class="info">            
+                <p class="mb-0">2025 Impressionismo Digitale - Sofia Neamtu</p>
+            </div>
+            <div class="social-media">
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
+            </div>          
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

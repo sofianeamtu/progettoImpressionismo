@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pierre-Auguste Renoir</title>
+    <link rel="stylesheet" href="stile_artisti.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="script2.js"></script>
+
+    <meta name="DC.title" content="Pierre-Auguste Renoir - Impressionismo Digitale">
+    <meta name="DC.creator" content="Sofia Neamtu">
+    <meta name="DC.subject" content="Arte, Impressionismo, Pierre-Auguste Renoir, Pittura">
+    <meta name="DC.description" content="Pagina dedicata alla vita e alle opere di Pierre-Auguste Renoir, maestro della luce e del colore.">
+    <meta name="DC.publisher" content="Sofia Neamtu">
+    <meta name="DC.date" content="2025-03-13">
+    <meta name="DC.format" content="text/html">
+    <meta name="DC.language" content="it">
+    <meta name="DC.identifier" content="https://www.impressionismodigitale.com/renoir.html">
+    <meta name="DC.rights" content="Copyright 2025 Sofia Neamtu">
+</head>
+<body>
+    <header class="text-white text-center p-3">
+        <h1>Impressionismo Digitale</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Cerca un artista..." onkeydown="if(event.key === 'Enter') searchArtist()">
+            <img src="https://img.icons8.com/ios/50/000000/search.png" alt="Cerca" class="search-icon" onclick="searchArtist()">
+        </div>
+        <div id="search-message" class="search-message"></div>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="artista.html">Artisti</a></li>
+                        <li class="nav-item"><a class="nav-link" href="opera.html">Opere</a></li>
+                        <li class="nav-item"><a class="nav-link" href="progetto.html">Web Project Plan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <nav aria-label="breadcrumb" class="ms-3 mt-2">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="artista.html">Artisti</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Pierre-Auguste Renoir</li>
+        </ol>
+    </nav>
+    
+    <div class="container mt-3 d-flex">
+        <aside class="col-md-3">
+            <nav class="nav flex-column p-3 rounded">
+                <a class="nav-link active" href="#vita">Vita</a>
+                <a class="nav-link" href="#analisi">Analisi delle opere</a>
+                <a class="nav-link" href="#tecniche">Tecniche pittoriche</a>
+                <a class="nav-link" href="#galleria">Galleria</a>
+                <a class="nav-link" href="#contesto">Contesto storico</a>
+            </nav>
+        </aside>
+        
+        <main class="col-md-9 text-center">
+            <div id="scroll-container">
+                <section id="vita">
+                    <h2>Vita</h2>
+                    <div class="content">
+                        <p>
+                            Pierre-Auguste Renoir (Limoges, 25 febbraio 1841 – Cagnes-sur-Mer, 3 dicembre 1919) è stato un pittore francese, considerato uno dei massimi esponenti dell'impressionismo. 
+                            La sua pittura si distingue per l'uso dei colori caldi e per le sue scene di vita sociale, ritratti e paesaggi vibranti di luce e movimento.
+                        </p>
+                        <img src="src/renoir.jpg" alt="Pierre-Auguste Renoir">
+                    </div>
+                </section>
+                
+                <section id="analisi" class="mt-4">
+                    <h2>Analisi delle Opere</h2>
+                    <div class="content">
+                        <p>
+                            Renoir ha dipinto alcune delle opere più celebri del movimento impressionista. <strong>Bal au moulin de la Galette</strong> è un esempio perfetto della sua capacità di rappresentare la luce e l'interazione sociale in ambienti all'aperto.
+                        </p>
+                        <p>
+                            Altre opere significative includono <strong>La Grenouillère</strong> e <strong>Le déjeuner des canotiers (Il pranzo dei canottieri)</strong>, in cui Renoir esplora la bellezza della vita quotidiana con il suo caratteristico stile vibrante.
+                        </p>
+                    </div>
+                </section>
+                
+                <section id="tecniche" class="mt-4">
+                    <h2>Tecniche Pittoriche</h2>
+                    <div class="content">
+                        <p>
+                            Renoir usava pennellate delicate e fluide, evitando i contorni netti per creare un effetto di morbidezza e luminosità. Prediligeva colori caldi e tonalità dorate per conferire alle sue opere una sensazione di vitalità e calore.
+                        </p>
+                        <p>
+                            Spesso dipingeva all'aperto (en plein air) per catturare la luce naturale, dando vita a scene piene di energia e movimento. Le sue figure femminili sono famose per la loro grazia e sensualità.
+                        </p>
+                    </div>
+                </section>
+
+                <section id="galleria">
+                    <h2>Galleria</h2>
+                </section>
+                
+                <div id="carouselGalleria" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="src/immagine2.jpg" alt="Bal au moulin de la Galette" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/immagine2_renoir.jpg" alt="La Grenouillère" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="src/immagine3_renoir.jpg" alt="Le déjeuner des canotiers" class="d-block w-100">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGalleria" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselGalleria" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                
+                <section id="contesto" class="mt-4">
+                    <h2>Contesto Storico</h2>
+                    <div class="content">
+                        <p>
+                            Renoir operò in un periodo di profondi cambiamenti sociali e culturali in Francia. L'impressionismo, di cui fu uno dei principali esponenti, sfidò le regole accademiche tradizionali, dando maggiore importanza alla luce e alla percezione visiva immediata.
+                        </p>
+                        <p>
+                            Renoir celebrò la bellezza della vita quotidiana e il piacere dell'esistenza, evitando temi politici e storici per concentrarsi su scene intime e gioiose.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    
+    <footer class="text-white text-center py-3 mt-auto">
+        <div class="info">            
+            <p class="mb-0">2025 Impressionismo Digitale - Sofia Neamtu</p>
+        </div>
+        <div class="social-media">
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+        </div>          
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
